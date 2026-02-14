@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Checkout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+ <link rel="stylesheet" href="D:\HAROON LEVEL 01\LEVEL 04 HTML CSS BOOTSTRAP\LEVEL 04 HTML CSS BOOTSTRAP\HTML CSS\smart home\buttor hover.css.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+
+  /* === BANNER === */
+.banner {
+
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  text-align: center;
+  color: #fff;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.banner-content .hover-button {
+  background: #544fd5;
+  border: none;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.banner-content .hover-button:hover {
+ background: linear-gradient(135deg, #221bf8, #a71bf8);
+}
+
+.banner-content .hover-button i {
+  font-size: 1.2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+ background: linear-gradient(135deg, #2c5364, #203a43, #0f2027);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.navbar img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #544fd5;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hover-button {
+  background: #544fd5;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s ease;
+}
+
+.hover-button:hover {
+  background: linear-gradient(135deg, #221bf8, #a71bf8);
+}
+
+.cart-icon {
+  position: relative;
+  font-size: 24px;
+  color: #333;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background: #dc3545;
+  color: #fff;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-size: 12px;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+  /* Footer */
+
+.footer {
+  background: #0f2027;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-logo h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.footer-logo p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer-links {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-links h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #00ffee;
+}
+
+.footer-social {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-social h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 15px;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00ffee;
+}
+
+.footer-social .copyright {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
+</style>
+<body>
+
+<nav class="navbar">
+  <a href="#">
+    <img src="./images/logo.png" alt="SmartHome Logo" />
+  </a>
+  <ul class="nav-links">
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Residents</a></li>
+    <li><a href="membership.html">Membership Plans</a></li>
+    <li><a href="shop.html">Shop Now</a></li>
+    <li><a href="#">Help</a></li>
+  </ul>
+  <div class="button-container">
+    <button class="hover-button">
+      <span class="text">Get the App</span>
+      <span class="icon">
+        <i class="fab fa-google-play"></i>
+        <i class="fab fa-apple"></i>
+      </span>
+    </button>
+   </div>
+</nav>
+<section class="banner">
+  <div class="banner-overlay">
+    <div class="banner-content">
+      <h1>Smart Shopping for Your Smart Home</h1>
+      <p>Discover the latest smart devices, gadgets, and home automation essentials. Shop with ease and upgrade your living.</p>
+      <button class="hover-button">
+        <span class="text">Start Shopping</span>
+        <span class="icon"><i class="fas fa-shopping-bag"></i></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="p-5">
+  <div class="container">
+    <h2>Place Order</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Delivery Address</label>
+        <textarea id="address" class="form-control" rows="3" placeholder="Your Address" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email ID</label>
+        <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
+      </div>
+      <button type="submit" class="btn btn-success">Place Order</button>
+    </form>
+  </div> 
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>SmartHome</h2>
+      <p>Empowering the future through artificial intelligence. We build smart, intuitive, and responsive systems for tomorrow.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Social Media -->
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p class="copyright">&copy; 2025 AI Tech. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

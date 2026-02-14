@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL BOT (SMART HOME WEB)</title>
+    <link rel="stylesheet" href="smarthome.css">
+    <link rel="stylesheet" href="smarthome.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="team members card details.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+
+  <!-- Header -->
+<section class="banner">
+  <nav class="navbar">
+    <a href="smarthome"><img src="./images/logo.png" alt="Logo"></a>
+    <ul class="nav-links">
+      <li><a href="aboutus.html">ABOUT US</a></li>
+      <li><a href="residents.html">RESIDENTS</a></li>
+      <li><a href="membership.html">MEMBERSHIP PLANS</a></li>
+      <li><a href="shop.html">SHOP NOW</a></li>
+      <li><a href="helpus.html">HELP</a></li>
+    </ul>
+  </div>
+  <div class="avatar" id="openSigninBtn2">
+ <i class="fas fa-user"></i>
+</div>
+
+  <div class="button-container">
+    <button class="hover-button">
+      <span class="text">Get the app</span>
+      <span class="icon">
+        <i class="fab fa-google-play"></i>
+        <i class="fab fa-apple"></i>
+      </span>
+    </button>
+  </div>
+<script>
+const openSigninBtn2 = document.getElementById("openSigninBtn2");
+
+openSigninBtn2.addEventListener("click", () => {
+  signinPopup.style.display = "block";
+});
+</script>
+  </nav>
+
+  <div class="banner-content">
+    <div class="text-content">
+      <h1>REMODEL YOUR HOME WITH <span>AI</span></h1>
+      <button class="hover-button" id="openSigninBtn">
+        <span class="text">Start for free</span>
+        <span class="icon">Signin➜</span>
+      </button>
+    </div>
+  </div>
+  <div class="signin-popup" id="signinPopup">
+    <div class="signin-content">
+      <span class="close-btn" id="closeSigninBtn">&times;</span>
+      <h2>Sign In</h2>
+      <form>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="email" placeholder="Email ID" required>
+        <input type="password" placeholder="Create Password" required>
+        <input type="text" placeholder="Enter CAPTCHA: 4 + 3 = ?" required>
+        <button type="submit" class="#">
+          <span class="text">Confirm➜</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="signin-popup.js"></script>
+
+
+    
+
+   <!-- ABOUT SECTION -->
+<section class="about-section">
+  <div class="about-container">
+    <!-- Text Content -->
+    <div class="about-text">
+      <h2>About SmartHome</h2>
+      <p>
+        At SmartHome, we believe in redefining modern living. Our mission is to make every home smarter, safer, and more energy-efficient with cutting-edge AI-powered automation.
+      </p>
+      <ul class="about-highlights">
+  <li><i class="#"></i>Seamless Smart Integration</li>
+  <li><i class="#"></i>24/7 Security & Monitoring</li>
+  <li><i class="#"></i>Eco-friendly Energy Solutions</li>
+</ul>
+      <button class="hover-button">
+        <span class="text">Get Started</span>
+        <span class="icon">➜</span>
+      </button>
+    </div>
+
+    <!-- Image Grid -->
+    <div class="about-images">
+      <div class="image large">
+        <img src="./images/about.png" alt="Smart Home Integration">
+      </div>
+      <div class="image small">
+        <img src="./images/about-two.png" alt="AI Technology">
+      </div>
+      <div class="image small">
+        <img src="./images/about-one.png" alt="Connected Devices">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FEATURE SECTION -->
+<section class="feature-section">
+  <div class="main-feature">
+    <h1>Our Smart Home Features</h1>
+    <div class="features-container">
+
+      <!-- 1. Automation -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-cogs"></i>
+        </div>
+        <h2>Automation</h2>
+        <p class="short">Smart schedules and routines for lights & devices.</p>
+        <div class="details">
+          Automate daily tasks like lighting, heating, and appliance control to match your lifestyle.
+        </div>
+      </div>
+
+      <!-- 2. Mobile Access -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h2>Mobile Access</h2>
+        <p class="short">Control from anywhere via app.</p>
+        <div class="details">
+          Manage your smart home remotely using our intuitive mobile app.
+        </div>
+      </div>
+
+      <!-- 3. Security -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-lock"></i>
+        </div>
+        <h2>Security</h2>
+        <p class="short">24/7 protection and alerts.</p>
+        <div class="details">
+          Advanced sensors and cameras keep your home secure with real-time alerts.
+        </div>
+      </div>
+
+      <!-- 4. Smart Lighting -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+        <h2>Smart Lighting</h2>
+        <p class="short">Adjust brightness & mood.</p>
+        <div class="details">
+          Control brightness, color, and scheduling for every room easily.
+        </div>
+      </div>
+
+      <!-- 5. Energy Saving -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-bolt"></i>
+        </div>
+        <h2>Energy Saving</h2>
+        <p class="short">Lower bills with efficiency.</p>
+        <div class="details">
+          Monitor usage and optimize energy consumption to save money.
+        </div>
+      </div>
+
+      <!-- 6. Voice Control -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-microphone"></i>
+        </div>
+        <h2>Voice Control</h2>
+        <p class="short">Hands-free convenience.</p>
+        <div class="details">
+          Integrate with Alexa, Google Assistant, or Siri for simple voice commands.
+        </div>
+      </div>
+
+      <!-- 7. Smart Thermostat -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-thermometer-half"></i>
+        </div>
+        <h2>Smart Thermostat</h2>
+        <p class="short">Perfect temperature always.</p>
+        <div class="details">
+          Control heating & cooling automatically for maximum comfort and savings.
+        </div>
+      </div>
+
+      <!-- 8. Smart Appliances -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-plug"></i>
+        </div>
+        <h2>Smart Appliances</h2>
+        <p class="short">Connected kitchen & more.</p>
+        <div class="details">
+          Control smart plugs, coffee makers, and more with schedules and remote access.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- flexbox-container -->
+<section class="container">
+<div class="main-feature">
+    <h2>The main features of our app</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati assumenda, expedita perspiciatis
+        ab commodi atque libero, iusto tempora ratione eaque a eligendi ad pariatur laudantium fugiat,
+        amet officiis! Et, repudiandae.
+    </p>
+</div>
+<section class="image-flexbox">
+    <div class="image-row">
+        <div class="long-image">
+            <img src="./images/group-one.png" alt="Long Image">
+        </div>
+    </div>
+    <div class="image-row">
+        <div class="square-image">
+            <img src="./images/group-two.png" alt="Square Image 1">
+        </div>
+        <div class="square-image">
+            <img src="./images/group-three.png" alt="Square Image 2">
+        </div>
+        <div class="square-image">
+            <img src="./images/group-four.png" alt="Square Image 3">
+        </div>
+        <div class="square-image">
+            <img src="./images/group-five.png" alt="Square Image 4">
+        </div>
+    </div>
+</section>
+
+<!-- Meet Our Team Section -->
+<h2>Meet Our Team</h2>
+
+<div class="carousel-container">
+
+    <!-- Enquiry Popup Modal -->
+  <div class="enquiry-section">
+    <button id="enquiry-btn" class="enquiry-btn">💬 Enquire Now</button>
+  </div>
+<div id="enquiry-modal" class="enquiry-modal">
+    <div class="enquiry-modal-content">
+      <span class="close-btn">&times;</span>
+      <h3>Contact Our Team</h3>
+      <p>Got questions? We’re here to help!</p>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Question" required></textarea>
+        <button type="submit" class="submit-btn">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Carousel Track -->
+  <div class="carousel-track">
+    <!-- Original Set -->
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="John">
+      <h4>John Smith</h4>
+      <p>Lead Developer</p>
+    </div>
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Emily">
+      <h4>Emily Clark</h4>
+      <p>UI/UX Designer</p>
+    </div>
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael">
+      <h4>Michael Lee</h4>
+      <p>Product Manager</p>
+    </div>
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Sarah">
+      <h4>Sarah Connor</h4>
+      <p>Marketing Lead</p>
+    </div>
+
+    <!-- Duplicate Set -->
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="John">
+      <h4>John Smith</h4>
+      <p>Lead Developer</p>
+    </div>
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Emily">
+      <h4>Emily Clark</h4>
+      <p>UI/UX Designer</p>
+    </div>
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael">
+      <h4>Michael Lee</h4>
+      <p>Product Manager</p>
+    </div>
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Sarah">
+      <h4>Sarah Connor</h4>
+      <p>Marketing Lead</p>
+    </div>
+  </div>
+</div>
+
+<script src="enquirymodal.js"></script>
+
+
+
+
+   <!-- Special Feature -->
+<section class="special-feature">
+  <div class="feature-content">
+    <div class="feature-image">
+      <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80" alt="Smart Home Automation">
+    </div>
+    <div class="feature-text">
+      <h2>Seamless Smart Home Control</h2>
+      <p>
+        Automate lighting, climate, security, and appliances with a single tap. Stay connected and manage your entire home environment anytime, anywhere.
+      </p>
+      <a href="#" class="btn primary">Explore Devices</a>
+    </div>
+  </div>
+</section>
+
+<!-- Special Feature 2-->
+<section class="special-feature alt">
+  <div class="feature-content">
+    <div class="feature-text">
+      <h2>Smartphone Monitoring & Alerts</h2>
+      <p>
+        Get real-time notifications about your home’s status, energy usage, and security updates right from our intuitive mobile app.
+      </p>
+      <a href="#" class="btn primary">Download the App</a>
+    </div>
+    <div class="feature-image">
+      <img src="https://images.unsplash.com/photo-1618444637536-c8d2c9d91ed4?auto=format&fit=crop&w=800&q=80" alt="Mobile App Access">
+    </div>
+  </div>
+</section>
+
+<!-- Special Feature 3 -->
+<section class="special-feature">
+  <div class="feature-content">
+    <div class="feature-image">
+      <img src="https://images.unsplash.com/photo-1593642532973-d31b2c4d6f8e?auto=format&fit=crop&w=800&q=80" alt="Energy Efficiency">
+    </div>
+    <div class="feature-text">
+      <h2>Eco-Friendly Energy Solutions</h2>
+      <p>
+        Reduce your carbon footprint with smart energy management. Monitor usage, set schedules, and optimize consumption for a greener home.
+      </p>
+      <a href="#" class="btn primary">Learn More</a>
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- What Our Customers Say -->
+
+ <h2>What Our Customers Say</h2>
+
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <!-- Cards Set 1 -->
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer 1" />
+        <h4>Emma Watson</h4>
+        <p>Absolutely love the service! Everything works perfectly and the support team is amazing. Highly recommended!</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer 2" />
+        <h4>David Miller</h4>
+        <p>A truly seamless experience. Managing my smart home has never been easier or more intuitive.</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer 3" />
+        <h4>Sophia Lee</h4>
+        <p>I feel so much safer knowing I can check everything from my phone. A must-have for every modern home!</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Customer 4" />
+        <h4>Chris Evans</h4>
+        <p>Fantastic user interface and reliable features. It’s like having a smart assistant at home 24/7.</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer 1" />
+        <h4>Emma Watson</h4>
+        <p>Absolutely love the service! Everything works perfectly and the support team is amazing. Highly recommended!</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer 2" />
+        <h4>David Miller</h4>
+        <p>A truly seamless experience. Managing my smart home has never been easier or more intuitive.</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer 3" />
+        <h4>Sophia Lee</h4>
+        <p>I feel so much safer knowing I can check everything from my phone. A must-have for every modern home!</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Customer 4" />
+        <h4>Chris Evans</h4>
+        <p>Fantastic user interface and reliable features. It’s like having a smart assistant at home 24/7.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="helpus-section">
+  <h2>Need Help? We’re Here for You!</h2>
+  <p>Whether you have questions about our products, need technical support, or want to learn more about smart home solutions, our team is ready to assist you.</p>
+  <button class="hover-button" id="openSigninBtn2">Contact Support</button> 
+</div>
+
+<script>
+  document.getElementById("openSigninBtn2").addEventListener("click", function() {
+    window.location.href = "contact.html"; 
+  });
+</script>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>SmartHome</h2>
+        <p>Empowering the future through intelligent living. Join us to build a smarter, safer home.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="aboutus.html">Residents</a></li>
+          <li><a href="membership.html">Membership plans</a></li>
+          <li><a href="shop.html">Shop now</a></li>
+          <li><a href="helpus.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="copyright">&copy; 2025 SmartHome Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</div>
+</section>  
+
+
+
+</body>
+</html>
